@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShrimpSential Crisis :3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="silly-bg">
+  <div id="app">
+    <div id="device">
+      <div id="screen">
+        <div id="status-bar">
+          <span id="pet-name">---</span>
+          <span id="pet-age">crise: 0</span>
+        </div>
+
+        <div id="scene">
+          <div id="pet-sprite" aria-label="camarão existencial"></div>
+          <div id="speech-bubble" class="hidden"></div>
+        </div>
+
+        <div id="stats">
+          <div class="stat">
+            <label>🍤 fome</label>
+            <div class="bar"><div class="fill" id="bar-hunger"></div></div>
+          </div>
+          <div class="stat">
+            <label>⚡ energia</label>
+            <div class="bar"><div class="fill" id="bar-energy"></div></div>
+          </div>
+          <div class="stat">
+            <label>💖 alegria</label>
+            <div class="bar"><div class="fill" id="bar-happiness"></div></div>
+          </div>
+          <div class="stat">
+            <label>🧼 higiene</label>
+            <div class="bar"><div class="fill" id="bar-hygiene"></div></div>
+          </div>
+        </div>
+
+        <div id="death-screen" class="hidden">
+          <p>💀</p>
+          <p id="death-message"></p>
+          <button id="btn-revive">tentar de novo >//<</button>
+        </div>
+      </div>
+
+      <div id="buttons">
+        <button class="btn-action" id="btn-feed"     title="Alimentar">🍖</button>
+        <button class="btn-action" id="btn-play"     title="Brincar">🎾</button>
+        <button class="btn-action" id="btn-sleep"    title="Dormir">😴</button>
+        <button class="btn-action" id="btn-clean"    title="Limpar">🛁</button>
+        <button class="btn-action" id="btn-medicine" title="Medicar">💊</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="pet.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
