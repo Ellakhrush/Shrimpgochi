@@ -158,7 +158,7 @@ class Pet {
     this._applyEffects(ACTION_EFFECTS.reveal);
     this.state = STATES.CRISIS; // Entra em choque
     this._updateState(); // O update vai tentar tirar do crisis, mas vamos forçar um tempo
-    return { ok: true, msg: "SOU APENAS UM OBJETO DA CLASSE PET?! T-T" };
+    return { ok: true, msg: "tinha q ser java..?" };
   }
 
   // ── O Juízo Final (Estado) ─────────────────────────────────────────────────────
