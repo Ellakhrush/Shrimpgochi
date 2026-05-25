@@ -1,5 +1,6 @@
 # 🍤 ShrimpSential Crisis
 
+Jogue aqui: https://ellakhrush.github.io/Shrimpgochi/
 O simulador de camarão digital mais existencial do mundo. 
 Ele não sabe por que existe, ele sabe apenas que é feito de pixels e que a fome dói. 
 
