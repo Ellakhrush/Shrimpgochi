@@ -83,9 +83,10 @@ class Pet {
     this._decayStat("hygiene",   DECAY_RATES.hygiene   * ticks * sleepMod);
 
     if (this.sleeping) {
-      // Recarrega a bateria do camarão 🔋
-      this.stats.energy = Math.min(100, this.stats.energy + DECAY_RATES.energy * 4 * ticks);
-      if (this.stats.energy >= 90) this.sleeping = false; // Acordou pro pesadelo!
+      // Recarrega a bateria do camarão MUITO mais rápido 🔋
+      // Agora ele recupera 15x a taxa de decay normal por tick
+      this.stats.energy = Math.min(100, this.stats.energy + DECAY_RATES.energy * 15 * ticks);
+      if (this.stats.energy >= 95) this.sleeping = false; // Acordou pro pesadelo!
     }
 
     // Chance de ficar doente (um bug no sistema)
