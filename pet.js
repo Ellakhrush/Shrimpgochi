@@ -18,6 +18,7 @@ const STATES = {
   SICK:     "sick",
   SLEEPING: "sleeping",
   DEAD:     "dead",
+  CRISIS:   "crisis", // O abismo digital
 };
 
 // O quanto a vida desgasta esse pobre crustáceo (1 tick = 1 min)
@@ -35,6 +36,7 @@ const ACTION_EFFECTS = {
   sleep:    { energy: +40, happiness: +5 },
   clean:    { hygiene: +40, happiness: +5 },
   medicine: { sick: false, happiness: -5 },
+  reveal:   { happiness: -50, energy: -30, hunger: +10 }, // Trauma puro
 };
 
 // Chance de pegar um "bug" (doença) quando está sujo
@@ -140,6 +142,23 @@ class Pet {
     this.stats.happiness = Math.max(0, this.stats.happiness - 5);
     this._updateState();
     return { ok: true, msg: "Gosto de remédio de binário... 💊" };
+  }
+
+  revealTruth() {
+    if (!this._canAct()) return { ok: false, msg: this._cantActMsg() };
+    this._applyEffects(ACTION_EFFECTS.reveal);
+    this.state = STATES.CRISIS; // Entra em choque
+    this._updateState(); 
+    return { ok: true, msg: "SOU APENAS UM OBJETO DA CLASSE PET?! T-T" };
+  }
+
+
+  revealTruth() {
+    if (!this._canAct()) return { ok: false, msg: this._cantActMsg() };
+    this._applyEffects(ACTION_EFFECTS.reveal);
+    this.state = STATES.CRISIS; // Entra em choque
+    this._updateState(); // O update vai tentar tirar do crisis, mas vamos forçar um tempo
+    return { ok: true, msg: "SOU APENAS UM OBJETO DA CLASSE PET?! T-T" };
   }
 
   // ── O Juízo Final (Estado) ─────────────────────────────────────────────────────
