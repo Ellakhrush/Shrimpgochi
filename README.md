@@ -1,17 +1,17 @@
-# 🍤 ShrimpSential Crisis (Silly Edition)
+# 🍤 ShrimpSential Crisis
 
 O simulador de camarão digital mais existencial do mundo. 
-Ele não sabe por que existe, ele sabe apenas que é feito de pixels e que a fome dói. :3
+Ele não sabe por que existe, ele sabe apenas que é feito de pixels e que a fome dói. 
 
 ## 🌀 O que é isso?
 Um camarão digital que vive no seu browser e ocasionalmente entra em colapso mental ao perceber que a realidade dele é um conjunto de arquivos `.js` e `.css`. >//<
 
-## 🛠️ Estrutura (A Bagunça Organizada)
+## 🛠️ Estrutura 
 ```
 tamagochi/
 ├── index.html   — a "casca" do camarão
 ├── style.css    — a maquiagem digital (pra ele não parecer tão triste)
-├── pet.js       — onde a crise existencial acontece (lógica)
+├── pet.js       — onde a crise existencial acontece
 ├── game.js      — o mestre de obras que faz tudo girar
 └── sprites/     — onde moram os sonhos (e PNGs) do camarão
 ```
@@ -32,7 +32,7 @@ Abra o `index.html` no browser. Não precisa de nada fancy. Só você e o camar�
 ### Estados Mentais
 - `happy` → "Tudo bem, sou só um camarão feliz!" :3
 - `neutral` → "Ok, a vida é aceitável."
-- `hungry` → "CÓDIGO DE FOME ATIVADO!"
+- `hungry` → "FOME"
 - `tired` → "Quero deletar minha consciência por 8 horas."
 - `dirty` → "Alguém me limpa, por favor!"
 - `sick` → "Acho que peguei um bug no sistema"
@@ -47,4 +47,4 @@ Abra o `index.html` no browser. Não precisa de nada fancy. Só você e o camar�
 - 💊 **Medicar**: Patch de correção para bugs biológicos.
 
 ---
-*Feito com 💖 e crises de ansiedade digitais.*
+*Feito com amor e crises de ansiedade do camarão.*
